@@ -1,0 +1,25 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: t-gym-multipage:latest
+    container_name: t-gym-multipage
+    ports:
+      - "${APP_PORT:-0001}:80"
+    init: true
+    restart: unless-stopped
+    mem_limit: 128m
+    cpus: "0.50"
+    healthcheck:
+      test:
+        ["CMD-SHELL", "wget --spider --quiet http://127.0.0.1/health || exit 1"]
+      interval: 30s
+      timeout: 5s
+      start_period: 10s
+      retries: 5
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

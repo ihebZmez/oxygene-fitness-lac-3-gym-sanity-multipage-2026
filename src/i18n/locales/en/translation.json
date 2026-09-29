@@ -1,0 +1,134 @@
+{
+  "nav": {
+    "home": "Home",
+    "activities": "Activities",
+    "pricing": "Pricing",
+    "corporate": "Corporate",
+    "schedule": "Schedule",
+    "contact": "Contact",
+    "bookTrial": "Book a Session",
+    "personalTraining": "Coaching",
+    "news": "News",
+    "shop": "Shop"
+  },
+  "hero": {
+    "badge": "Season 2025 · Tunis, Tunisia",
+    "title": "{{gymName}}",
+    "titleHighlight": "Your energy.",
+    "subtitle": "A premium club in Tunis to get stronger, move together, and reach your goals.",
+    "ctaPrimary": "Discover our spaces",
+    "ctaSecondary": "Try a session"
+  },
+  "about": {
+    "badge": "Our Story",
+    "title": "Born from",
+    "titleHighlight": "passion",
+    "subtitle": "A human adventure that brings together performance, innovation, and community",
+    "stats": {
+      "members": "Members",
+      "sessions": "Sessions",
+      "events": "Events",
+      "partners": "Partners"
+    },
+    "quote": "It's not just a gym. It's the expression of our passion for movement and progress.",
+    "quoteAuthor": "— Founder, {{gymName}}"
+  },
+  "activities": {
+    "badge": "Our Disciplines",
+    "title": "Your",
+    "titleHighlight": "Program",
+    "subtitle": "Diverse activities for all levels and all goals",
+    "viewAll": "View all activities"
+  },
+  "coaches": {
+    "badge": "Our Team",
+    "title": "Your",
+    "titleHighlight": "Coaches",
+    "subtitle": "Passionate professionals at your service",
+    "viewAll": "Meet the team"
+  },
+  "schedule": {
+    "badge": "Weekly Schedule",
+    "title": "Your",
+    "titleHighlight": "Routine",
+    "subtitle": "Classes adapted to all schedules",
+    "viewAll": "View full schedule",
+    "today": "Today",
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday"
+  },
+  "pricing": {
+    "badge": "Our Memberships",
+    "title": "Choose your",
+    "titleHighlight": "Plan",
+    "subtitle": "Rates adapted to your needs",
+    "popular": "Popular",
+    "perMonth": "/month",
+    "cta": "Book a session"
+  },
+  "testimonials": {
+    "badge": "They talk about us",
+    "title": "What they say"
+  },
+  "cta": {
+    "badge": "🎯 LIMITED EDITION 2025",
+    "title": "Ready to",
+    "titleHighlight": "Dominate the Floor",
+    "subtitle": "Join the most energetic sports community in Tunis. Professional equipment, personalized coaching, and a unique atmosphere await you.",
+    "stats": {
+      "members": "Active Members",
+      "events": "Events/year",
+      "satisfaction": "Satisfaction"
+    },
+    "ctaPrimary": "Book a trial",
+    "ctaSecondary": "Contact Us"
+  },
+  "contact": {
+    "badge": "Premium Service 24/7",
+    "title": "Contact",
+    "titleHighlight": "excellence",
+    "subtitle": "A dedicated team is at your disposal for any information, reservation, or partnership request. Response guaranteed within 24h.",
+    "form": {
+      "title": "Send us a message",
+      "subtitle": "Fill out the form and we'll respond within 24h",
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Your message",
+      "submit": "Send Request",
+      "sending": "Sending...",
+      "required": "Required fields"
+    },
+    "info": {
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address",
+      "hours": "Hours"
+    },
+    "social": "Follow us"
+  },
+  "footer": {
+    "copyright": "© 2026 {{gymName}}. All rights reserved.",
+    "tagline": "Excellence in Tunisian sports"
+  },
+  "reservation": {
+    "title": "Book a session",
+    "subtitle": "Try {{gymName}} for free",
+    "success": "Your request has been sent successfully! We will contact you within 24h.",
+    "form": {
+      "name": "Full name *",
+      "phone": "Phone *",
+      "email": "Email *",
+      "activity": "Preferred activity",
+      "date": "Preferred date",
+      "time": "Preferred time",
+      "message": "Message (optional)",
+      "submit": "Book my session"
+    }
+  }
+}

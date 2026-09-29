@@ -1,0 +1,134 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "activities": "Activités",
+    "pricing": "Tarifs",
+    "corporate": "Entreprises",
+    "schedule": "Planning",
+    "contact": "Contact",
+    "bookTrial": "Réserver une séance",
+    "personalTraining": "Coaching",
+    "news": "Actualités",
+    "shop": "Boutique"
+  },
+  "hero": {
+    "badge": "Saison 2025 · Tunis, Tunisie",
+    "title": "{{gymName}}",
+    "titleHighlight": "Votre énergie.",
+    "subtitle": "Un club premium à Tunis pour se renforcer, bouger ensemble et atteindre ses objectifs.",
+    "ctaPrimary": "Découvrir nos espaces",
+    "ctaSecondary": "Faire un essai"
+  },
+  "about": {
+    "badge": "Notre Histoire",
+    "title": "Née de la",
+    "titleHighlight": "passion",
+    "subtitle": "Une aventure humaine qui réunit performance, innovation et communauté",
+    "stats": {
+      "members": "Membres",
+      "sessions": "Séances",
+      "events": "Événements",
+      "partners": "Partenaires"
+    },
+    "quote": "Ce n'est pas qu'une salle de sport. C'est l'expression de notre passion pour le mouvement et la progression.",
+    "quoteAuthor": "— Fondateur, {{gymName}}"
+  },
+  "activities": {
+    "badge": "Nos Disciplines",
+    "title": "Votre",
+    "titleHighlight": "Programme",
+    "subtitle": "Des activités variées pour tous les niveaux et tous les objectifs",
+    "viewAll": "Voir toutes les activités"
+  },
+  "coaches": {
+    "badge": "Notre Équipe",
+    "title": "Vos",
+    "titleHighlight": "Coachs",
+    "subtitle": "Des professionnels passionnés à votre écoute",
+    "viewAll": "Rencontrer l'équipe"
+  },
+  "schedule": {
+    "badge": "Planning Hebdomadaire",
+    "title": "Votre",
+    "titleHighlight": "Routine",
+    "subtitle": "Des cours adaptés à tous les emplois du temps",
+    "viewAll": "Voir le planning complet",
+    "today": "Aujourd'hui",
+    "monday": "Lundi",
+    "tuesday": "Mardi",
+    "wednesday": "Mercredi",
+    "thursday": "Jeudi",
+    "friday": "Vendredi",
+    "saturday": "Samedi",
+    "sunday": "Dimanche"
+  },
+  "pricing": {
+    "badge": "Nos Abonnements",
+    "title": "Choisissez votre",
+    "titleHighlight": "Formule",
+    "subtitle": "Des tarifs adaptés à vos besoins",
+    "popular": "Populaire",
+    "perMonth": "/mois",
+    "cta": "Réserver une séance"
+  },
+  "testimonials": {
+    "badge": "Ils parlent de nous",
+    "title": "Ce qu'ils disent"
+  },
+  "cta": {
+    "badge": "🎯 ÉDITION LIMITÉE 2025",
+    "title": "Prêt à",
+    "titleHighlight": "Dominer la Salle",
+    "subtitle": "Rejoignez la communauté sportive la plus énergique de Tunis. Des équipements professionnels, coaching personnalisé et une ambiance unique vous attendent.",
+    "stats": {
+      "members": "Membres actifs",
+      "events": "Événements/an",
+      "satisfaction": "Satisfaction"
+    },
+    "ctaPrimary": "Réserver un essai",
+    "ctaSecondary": "Nous Contacter"
+  },
+  "contact": {
+    "badge": "Service Premium 24/7",
+    "title": "Contactez",
+    "titleHighlight": "l'excellence",
+    "subtitle": "Une équipe dédiée est à votre écoute pour toute demande d'information, réservation ou partenariat. Réponse garantie sous 24h.",
+    "form": {
+      "title": "Envoyez-nous un message",
+      "subtitle": "Remplissez le formulaire et nous vous répondrons sous 24h",
+      "name": "Nom complet",
+      "email": "Email",
+      "phone": "Téléphone",
+      "message": "Votre message",
+      "submit": "Envoyer la Demande",
+      "sending": "Envoi en cours...",
+      "required": "Champs obligatoires"
+    },
+    "info": {
+      "phone": "Téléphone",
+      "email": "Email",
+      "address": "Adresse",
+      "hours": "Horaires"
+    },
+    "social": "Suivez-nous"
+  },
+  "footer": {
+    "copyright": "© 2026 {{gymName}}. Tous droits réservés.",
+    "tagline": "L'excellence du sport tunisien"
+  },
+  "reservation": {
+    "title": "Réserver une séance",
+    "subtitle": "Essayez {{gymName}} gratuitement",
+    "success": "Votre demande a été envoyée avec succès ! Nous vous contacterons sous 24h.",
+    "form": {
+      "name": "Nom complet *",
+      "phone": "Téléphone *",
+      "email": "Email *",
+      "activity": "Activité souhaitée",
+      "date": "Date préférée",
+      "time": "Horaire préféré",
+      "message": "Message (optionnel)",
+      "submit": "Réserver ma séance"
+    }
+  }
+}
