@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
+import BackgroundMusic from "./components/layout/BackgroundMusic";
 import WhatsAppButton from "./components/ui/WhatsAppButton";
 import Home from "./pages/Home";
 import Activities from "./pages/Activities";
@@ -52,6 +53,7 @@ function App() {
       </PageTransition>
       <Footer />
       <WhatsAppButton />
+      <BackgroundMusic />
     </BrowserRouter>
   );
 }
