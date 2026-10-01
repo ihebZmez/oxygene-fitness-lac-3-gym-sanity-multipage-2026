@@ -1,38 +1,77 @@
 /* src/index.css */
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap");
 
 @import "tailwindcss";
 
 @theme {
-  /* Brand — RED & WHITE */
-  --color-gym-red: #e11d2e;
-  --color-gym-red-light: #ff3b4e;
-  --color-gym-red-dark: #b01020;
+  /* Brand — graphite and citrus */
+  --color-gym-red: #d8ff57;
+  --color-gym-red-light: #e4ff8b;
+  --color-gym-red-dark: #a9d82c;
 
   /* Kept the old names too so existing components still work */
-  --color-gym-orange: #e11d2e;
-  --color-gym-orange-light: #ff3b4e;
-  --color-gym-orange-dark: #b01020;
+  --color-gym-orange: #d8ff57;
+  --color-gym-orange-light: #e4ff8b;
+  --color-gym-orange-dark: #a9d82c;
 
   /* Dark neutrals */
-  --color-gym-bg: #0a0a0a;
-  --color-gym-bg-light: #141414;
-  --color-gym-white: #ffffff;
-  --color-gym-gray: #888888;
-  --color-gym-border: rgba(255, 255, 255, 0.08);
+  --color-gym-bg: #101310;
+  --color-gym-bg-light: #191e18;
+  --color-gym-white: #f4f5ed;
+  --color-gym-gray: #a1a99e;
+  --color-gym-border: rgba(244, 245, 237, 0.11);
 
-  --font-sans: "Mona Sans", sans-serif;
-  --font-serif: "DM Serif Text", serif;
+  --font-sans: "Manrope", sans-serif;
+  --font-serif: "Barlow Condensed", sans-serif;
 }
 
 html,
 body {
   width: 100%;
   background-color: var(--color-gym-bg);
+  background-image: radial-gradient(
+    ellipse at 50% -30%,
+    rgba(216, 255, 87, 0.07),
+    transparent 55%
+  );
   color: var(--color-gym-white);
   scroll-behavior: smooth;
   overflow-x: hidden;
   font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-serif);
+  font-weight: 700;
+}
+
+section.bg-gym-bg,
+main > div.bg-gym-bg {
+  background-color: var(--color-gym-bg);
+}
+
+section.bg-gym-bg-light {
+  background-color: var(--color-gym-bg-light);
+}
+
+section .rounded-2xl,
+main .rounded-2xl,
+footer .rounded-2xl {
+  border-radius: 8px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 /* RTL Support */
@@ -70,7 +109,7 @@ html[dir="rtl"] .space-x-4 > :not([hidden]) ~ :not([hidden]) {
 }
 
 @utility text-gradient {
-  background: linear-gradient(to bottom, #ffffff, #e11d2e);
+  background: linear-gradient(to bottom, #f4f5ed, #d8ff57);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -86,17 +125,17 @@ html[dir="rtl"] .space-x-4 > :not([hidden]) ~ :not([hidden]) {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-gym-red);
+  background: var(--color-gym-orange);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-gym-red-light);
+  background: var(--color-gym-orange-light);
 }
 
 /* Selection */
 ::selection {
-  background: var(--color-gym-red);
+  background: var(--color-gym-orange);
   color: var(--color-gym-white);
 }
 

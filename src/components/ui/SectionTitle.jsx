@@ -102,12 +102,12 @@ const SectionTitle = ({
   );
 
   return (
-    <div ref={ref} className={`text-center mb-12 ${className}`}>
+    <div ref={ref} className={`text-left mb-10 max-w-4xl ${className}`}>
       {badge && (
         <div className="badge-text inline-block mb-4">
-          <div className="flex items-center gap-2 bg-gym-orange/10 backdrop-blur-sm border border-gym-orange/20 rounded-full px-6 py-2">
+          <div className="flex items-center gap-2 bg-gym-orange/10 backdrop-blur-sm border border-gym-orange/25 rounded-sm px-4 py-2">
             <span className="w-1.5 h-1.5 rounded-full bg-gym-orange animate-pulse"></span>
-            <span className="text-gym-orange text-xs font-medium tracking-wide uppercase">
+            <span className="text-gym-orange text-xs font-extrabold tracking-[0.16em] uppercase">
               {badge}
             </span>
           </div>
@@ -116,12 +116,12 @@ const SectionTitle = ({
 
       <div className="relative">
         {number && (
-          <span className="section-number absolute -top-8 left-1/2 -translate-x-1/2 text-7xl font-bold text-white/5 select-none">
+          <span className="section-number absolute -top-7 right-0 text-8xl font-bold leading-none text-white/[0.04] select-none">
             {number}
           </span>
         )}
 
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+        <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[0.92]">
           {title && (
             <span className="text-white">
               {title.split("").map((char, i) => (
@@ -144,7 +144,7 @@ const SectionTitle = ({
       </div>
 
       {subtitle && (
-        <p className="subtitle-text text-white/50 text-base md:text-lg max-w-2xl mx-auto mt-4">
+        <p className="subtitle-text text-white/55 text-sm md:text-base max-w-2xl mt-4 leading-relaxed">
           {subtitle}
         </p>
       )}

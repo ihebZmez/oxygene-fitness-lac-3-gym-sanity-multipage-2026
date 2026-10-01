@@ -147,10 +147,10 @@ const Navbar = () => {
     <>
       <nav
         ref={navRef}
-        className="fixed top-0 left-0 w-full z-50 px-4 md:px-8 border-b border-transparent"
+        className="site-nav fixed top-0 left-0 w-full z-50 px-4 md:px-8 border-b border-transparent"
         style={{
-          paddingTop: "0.1rem",
-          paddingBottom: "0.1rem",
+          paddingTop: "1rem",
+          paddingBottom: "1rem",
           backgroundColor: "rgba(10,10,10,0)",
           transition: "padding 0.4s",
         }}
@@ -160,9 +160,9 @@ const Navbar = () => {
           <NavLink to="/" className="flex items-center gap-3">
             <div
               ref={logoRef}
-              className="w-10 h-10 rounded-lg bg-gym-red flex items-center justify-center flex-shrink-0 shadow-lg shadow-gym-red/20"
+              className="w-10 h-10 rounded-sm bg-gym-orange flex items-center justify-center flex-shrink-0 shadow-lg shadow-gym-orange/20"
             >
-              <Dumbbell className="w-5 h-5 text-white" />
+              <Dumbbell className="w-5 h-5 text-gym-bg" />
             </div>
             <span className="text-white text-lg font-bold tracking-wider uppercase">
               {gymName}
@@ -234,7 +234,7 @@ const Navbar = () => {
             <button
               ref={ctaRef}
               onClick={handleBookTrial}
-              className="hidden md:block bg-gym-red text-white px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 hover:bg-gym-red-light hover:shadow-lg hover:shadow-gym-red/30"
+              className="hidden md:block bg-gym-orange text-gym-bg px-5 py-3 rounded-md text-xs font-extrabold uppercase tracking-[0.12em] transition-all duration-300 hover:bg-gym-orange-light hover:shadow-lg hover:shadow-gym-orange/20"
             >
               {t("nav.bookTrial")}
             </button>
@@ -260,7 +260,7 @@ const Navbar = () => {
       {/* Mobile Drawer */}
       <div
         ref={mobileMenuRef}
-        className="fixed top-0 right-0 bottom-0 w-[min(340px,90vw)] bg-gym-bg border-l border-gym-border z-50 transform translate-x-full flex flex-col p-8 overflow-y-auto"
+        className="fixed top-0 right-0 bottom-0 w-[min(340px,90vw)] bg-gym-bg-light border-l border-gym-border z-50 transform translate-x-full flex flex-col p-8 overflow-y-auto"
       >
         <div className="flex justify-between items-center mb-8">
           <span className="text-white font-bold tracking-wider uppercase">
@@ -326,7 +326,7 @@ const Navbar = () => {
               closeMenu();
               handleBookTrial();
             }}
-            className="w-full bg-gym-red text-white py-4 rounded-full font-bold uppercase tracking-wider hover:bg-gym-red-light transition-colors"
+            className="w-full bg-gym-orange text-gym-bg py-4 rounded-md font-extrabold uppercase tracking-[0.12em] hover:bg-gym-orange-light transition-colors"
           >
             {t("nav.bookTrial")}
           </button>

@@ -14,21 +14,21 @@ const Button = forwardRef(
     ref,
   ) => {
     const baseStyles =
-      "inline-flex items-center justify-center gap-2 font-bold uppercase tracking-wider transition-all duration-300 rounded-full";
+      "inline-flex items-center justify-center gap-2 font-extrabold uppercase tracking-[0.12em] transition-all duration-300 rounded-md";
 
     const variants = {
-      // RED primary button — white text on red
+      // Citrus primary button
       primary:
-        "bg-gym-red text-white hover:bg-gym-red-light hover:shadow-lg hover:shadow-gym-red/30",
+        "bg-gym-red text-gym-bg hover:bg-gym-red-light hover:shadow-lg hover:shadow-gym-red/20",
       secondary:
         "bg-white/5 text-white border border-gym-border hover:bg-white/10 hover:border-white/30",
-      // Outline — red border, fills red on hover
+      // Outline — citrus border, fills on hover
       outline:
-        "bg-transparent text-gym-red border-2 border-gym-red hover:bg-gym-red hover:text-white",
+        "bg-transparent text-gym-red border border-gym-red/60 hover:bg-gym-red hover:text-gym-bg",
       ghost: "bg-transparent text-white/70 hover:text-white hover:bg-white/5",
-      // Bonus: white button with red text (great for red sections)
+      // Light button for high contrast sections
       white:
-        "bg-white text-gym-red hover:bg-white/90 hover:shadow-lg hover:shadow-white/20",
+        "bg-white text-gym-bg hover:bg-white/90 hover:shadow-lg hover:shadow-white/20",
     };
 
     const sizes = {

@@ -210,7 +210,7 @@ const Hero = () => {
     <section
       ref={heroRef}
       id="accueil"
-      className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-gym-bg"
+      className="hero-section relative min-h-screen w-full flex items-center overflow-hidden bg-gym-bg"
     >
       {/* Background: poster + video */}
       <div className="absolute inset-0 z-0 overflow-hidden">
@@ -236,7 +236,7 @@ const Hero = () => {
         >
           <source src={VIDEOS[currentVideoIndex]} type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-gym-bg/60 via-gym-bg/40 to-gym-bg/80" />
+        <div className="hero-image-overlay absolute inset-0 bg-gradient-to-r from-gym-bg/95 via-gym-bg/65 to-gym-bg/10" />
       </div>
 
       {/* Scroll overlay */}
@@ -272,14 +272,14 @@ const Hero = () => {
       {/* Content */}
       <div
         ref={contentRef}
-        className="relative z-10 text-center px-4 max-w-4xl mx-auto will-change-transform"
+        className="hero-content relative z-10 text-left px-5 sm:px-8 lg:px-12 max-w-7xl w-full mx-auto will-change-transform"
       >
-        <div className="hero-badge inline-flex items-center gap-2 bg-gym-orange/10 border border-gym-orange/30 text-gym-orange text-xs font-semibold tracking-[0.2em] uppercase px-4 py-1.5 rounded-full mb-6 opacity-0">
+        <div className="hero-badge inline-flex items-center gap-2 bg-gym-orange/10 border border-gym-orange/35 text-gym-orange text-xs font-extrabold tracking-[0.2em] uppercase px-4 py-2 rounded-sm mb-6 opacity-0">
           <span className="w-1.5 h-1.5 rounded-full bg-gym-orange animate-pulse" />
           {t("hero.badge")}
         </div>
 
-        <h1 className="hero-title text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[0.9] text-white overflow-hidden perspective-800">
+        <h1 className="hero-title text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-bold leading-[0.82] text-white overflow-hidden perspective-800 max-w-5xl">
           {t("hero.title", { gymName })}
           <br />
           <span className="text-gym-orange inline-block">
@@ -287,11 +287,11 @@ const Hero = () => {
           </span>
         </h1>
 
-        <p className="hero-subtitle text-white/60 text-sm md:text-base max-w-lg mx-auto mt-6 leading-relaxed">
+        <p className="hero-subtitle text-white/75 text-sm md:text-base max-w-lg mt-6 leading-relaxed">
           {t("hero.subtitle")}
         </p>
 
-        <div className="hero-ctas flex flex-col sm:flex-row gap-4 justify-center mt-8">
+        <div className="hero-ctas flex flex-col sm:flex-row items-start gap-3 mt-8">
           <Button variant="primary" size="lg" onClick={handleDiscover}>
             {t("hero.ctaPrimary")}
           </Button>
