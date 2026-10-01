@@ -7,7 +7,7 @@ export default defineConfig({
   name: 'default',
   title: 'Samurai Nouvelle Madina',
 
-  projectId: '8igp3p0n',
+  projectId: '6sxvmjrh',
   dataset: 'production',
 
   plugins: [structureTool(), visionTool()],

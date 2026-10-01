@@ -7,6 +7,7 @@ import SectionTitle from "../ui/SectionTitle";
 import Button from "../ui/Button";
 import { usePricing } from "../../hooks/usePricing";
 import { ArrowRight } from "lucide-react";
+import { isPackage1SiteVitrine } from "../../config/packageMode";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,6 +16,7 @@ const Pricing = () => {
   const sectionRef = useRef(null);
   const { data: plans = [], loading } = usePricing();
   const safePlans = Array.isArray(plans) ? plans : [];
+  const package1SiteVitrine = isPackage1SiteVitrine();
 
   useEffect(() => {
     if (!loading && safePlans.length > 0) {
@@ -103,22 +105,25 @@ const Pricing = () => {
           ))}
         </div>
         {/* In Pricing.jsx, after the grid */}
-        <div className="mt-10 p-5 rounded-2xl bg-gym-orange/10 border border-gym-orange/20 flex flex-col sm:flex-row items-center justify-between gap-4 max-w-5xl mx-auto">
-          <div>
-            <p className="text-white font-semibold text-sm">
-              Vous êtes une entreprise ?
-            </p>
-            <p className="text-white/50 text-xs">
-              Offres corporate sur mesure pour vos équipes.
-            </p>
+        {!package1SiteVitrine && (
+          <div className="mt-10 p-5 rounded-2xl bg-gym-orange/10 border border-gym-orange/20 flex flex-col sm:flex-row items-center justify-between gap-4 max-w-5xl mx-auto">
+            <div>
+              <p className="text-white font-semibold text-sm">
+                Vous êtes une entreprise ?
+              </p>
+              <p className="text-white/50 text-xs">
+                Offres corporate sur mesure pour vos équipes.
+              </p>
+            </div>
+            <button
+              onClick={() => navigate("/corporate")}
+              className="text-gym-orange text-xs font-bold uppercase tracking-wider hover:gap-2 inline-flex items-center gap-1 transition-all"
+            >
+              Voir les offres d'entreprise{" "}
+              <ArrowRight className="w-3.5 h-3.5" />
+            </button>
           </div>
-          <button
-            onClick={() => navigate("/corporate")}
-            className="text-gym-orange text-xs font-bold uppercase tracking-wider hover:gap-2 inline-flex items-center gap-1 transition-all"
-          >
-            Découvrir <ArrowRight className="w-3.5 h-3.5" />
-          </button>
-        </div>
+        )}
       </div>
     </section>
   );

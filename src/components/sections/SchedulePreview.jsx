@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SectionTitle from "../ui/SectionTitle";
 import Button from "../ui/Button";
 import { useSchedule } from "../../hooks/useSchedule";
+import { isPackage1SiteVitrine } from "../../config/packageMode";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -23,6 +24,7 @@ const SchedulePreview = () => {
   const sectionRef = useRef(null);
   const { data: scheduleRows, loading } = useSchedule();
   const safeRows = Array.isArray(scheduleRows) ? scheduleRows : [];
+  const package1SiteVitrine = isPackage1SiteVitrine();
 
   const scheduleByDay = days.reduce((acc, day) => {
     acc[day] = safeRows.filter((r) => r.day === day);
@@ -145,14 +147,16 @@ const SchedulePreview = () => {
         </div>
 
         {/* Small Shop link */}
-        <div className="mt-6 text-center">
-          <button
-            onClick={() => navigate("/shop")}
-            className="text-white/40 text-xs uppercase tracking-wider hover:text-gym-orange transition-colors"
-          >
-            Shop & Partenaires →
-          </button>
-        </div>
+        {!package1SiteVitrine && (
+          <div className="mt-6 text-center">
+            <button
+              onClick={() => navigate("/shop")}
+              className="text-white/40 text-xs uppercase tracking-wider hover:text-gym-orange transition-colors"
+            >
+              Shop & Partenaires →
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

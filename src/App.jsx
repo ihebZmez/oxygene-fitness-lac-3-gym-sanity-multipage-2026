@@ -15,9 +15,11 @@ import Contact from "./pages/Contact";
 import PersonalTrainingPage from "./pages/PersonalTrainingPage";
 import NewsPage from "./pages/NewsPage";
 import ShopPage from "./pages/ShopPage";
+import { isPackage1SiteVitrine } from "./config/packageMode";
 
 function App() {
   const { i18n } = useTranslation();
+  const package1SiteVitrine = isPackage1SiteVitrine();
 
   // Set RTL based on language
   useEffect(() => {
@@ -37,17 +39,23 @@ function App() {
             {/* Existing */}
             <Route path="/activites" element={<Activities />} />
             <Route path="/tarifs" element={<Pricing />} />
-            <Route
-              path="/coaching-personnel"
-              element={<PersonalTrainingPage />}
-            />
-            <Route path="/corporate" element={<CorporatePage />} />
+            {!package1SiteVitrine && (
+              <Route
+                path="/coaching-personnel"
+                element={<PersonalTrainingPage />}
+              />
+            )}
+            {!package1SiteVitrine && (
+              <Route path="/corporate" element={<CorporatePage />} />
+            )}
             <Route path="/planning" element={<Schedule />} />
             <Route path="/contact" element={<Contact />} />
 
             {/* New dedicated pages */}
             <Route path="/actualites" element={<NewsPage />} />
-            <Route path="/shop" element={<ShopPage />} />
+            {!package1SiteVitrine && (
+              <Route path="/shop" element={<ShopPage />} />
+            )}
           </Routes>
         </main>
       </PageTransition>
