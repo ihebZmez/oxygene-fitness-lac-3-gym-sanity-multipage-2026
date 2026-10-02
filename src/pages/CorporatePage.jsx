@@ -7,7 +7,7 @@ export default function CorporatePage() {
   return (
     <div className="pt-24">
       <Seo
-        title="Offres corporate & entreprise | Samurai Nouvelle Madina"
+        title="Offres corporate & entreprise | OXYGÈNE FITNESS – LAC 3"
         description="Offres sport d'entreprise pour vos équipes : programmes fitness, coaching, wellness et activités sportives en entreprise."
         canonical="/corporate"
       />

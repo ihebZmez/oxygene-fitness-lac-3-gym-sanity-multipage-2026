@@ -40,8 +40,8 @@ const ActivitiesPage = () => {
       className="min-h-screen pt-8 pb-20 px-4 md:px-8 bg-gym-bg"
     >
       <Seo
-        title="Nos activités de fitness | Samurai Nouvelle Madina"
-        description="Découvrez les activités Samurai Nouvelle Madina : musculation, cardio, crossfit, yoga, boxing, cours collectifs et coaching personnel."
+        title="Cours collectifs à Lac 3 | OXYGÈNE FITNESS"
+        description="Découvrez les cours collectifs d'OXYGÈNE FITNESS à Lac 3, Tunis : Cross Training, Boxe, Pilates, Cycling, Zumba, AfroDance et plus."
         canonical="/activites"
       />
       <div className="max-w-7xl mx-auto">

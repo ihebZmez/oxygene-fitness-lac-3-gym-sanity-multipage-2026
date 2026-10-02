@@ -3,10 +3,10 @@
 ## Selling Points
 
 1. **Premium First Impression** — cinematic hero, high-quality motion, luxury feel.
-2. **The Only Gym in Mourouj with This Level** — a real digital advantage.
+2. **Lac 3 location and free parking** — useful information for local visitors.
 3. **Built to Convert** — every page drives to trial / contact / WhatsApp.
 4. **Real Content Control** — the client edits everything in Sanity, no developer needed.
-5. **Local SEO Ready** — optimized for "salle de sport Mourouj", "gym Tunis".
+5. **Local SEO Ready** — optimized for relevant Lac 3 and Tunis fitness searches.
 
 ## Client Q&A
 

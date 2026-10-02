@@ -10,7 +10,7 @@ export const newsItems = [
     icons: ["💃", "🔥", "💪", "✨"],
     image: "/images/news/zumba-olfa.jpg",
     callToAction: "Réservez votre place",
-    phone: "+216 53 85 31 55",
+    phone: "+216 20 053 053",
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ export const newsItems = [
     icons: ["🥊", "🥋", "汗水", "💪"],
     image: "/images/news/boxe-thai.jpg",
     callToAction: "Réservez votre place",
-    phone: "+216 53 85 31 55",
+    phone: "+216 20 053 053",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ export const newsItems = [
     icons: ["💃", "🔥", "💪", "✨"],
     image: "/images/news/darbouka.jpg",
     callToAction: "Réservez votre place",
-    phone: "+216 53 85 31 55",
+    phone: "+216 20 053 053",
   },
   {
     id: 4,
@@ -48,7 +48,7 @@ export const newsItems = [
     icons: ["💃", "🔥", "💪", "✨"],
     image: "/images/news/crossfit.jpg",
     callToAction: "Réservez votre place",
-    phone: "+216 53 85 31 55",
+    phone: "+216 20 053 053",
   },
   {
     id: 5,
@@ -61,6 +61,6 @@ export const newsItems = [
     icons: ["💃", "🔥", "💪", "✨"],
     image: "/images/news/boxe-anglaise.jpg",
     callToAction: "Réservez votre place",
-    phone: "+216 53 85 31 55",
+    phone: "+216 20 053 053",
   },
 ];

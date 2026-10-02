@@ -7,8 +7,8 @@ export default function PersonalTrainingPage() {
   return (
     <div className="pt-24">
       <Seo
-        title="Coaching personnel | Samurai Nouvelle Madina"
-        description="Profitez d'un coaching personnel personnalisé à Samurai Nouvelle Madina pour perdre du poids, prendre du muscle et améliorer votre forme."
+        title="Coaching sportif à Lac 3 | OXYGÈNE FITNESS"
+        description="Progressez avec un coaching sportif à OXYGÈNE FITNESS – LAC 3, votre salle de sport à Lac 3, Tunis."
         canonical="/coaching-personnel"
       />
       <PersonalTraining />

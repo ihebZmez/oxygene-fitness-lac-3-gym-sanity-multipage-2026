@@ -131,7 +131,7 @@ Appears on the home page instantly.
 
 ## ✍️ How to Edit Content (Every Day)
 
-1. Go to **samurai-nouvelle-madina.sanity.studio**
+1. Go to the Sanity Studio URL assigned to this project
 2. Log in with your email
 3. Choose a section (Actualités, Promotions, Coaches…)
 4. Click **Create new** or click an existing item
@@ -185,7 +185,7 @@ Those stay with the developer.
 
 ## ✅ Quick Start Checklist
 
-- [ ] Log into samurai-nouvelle-madina.sanity.studio
+- [ ] Log into the Sanity Studio URL assigned to this project
 - [ ] Update **Site Settings** with your real phone + WhatsApp
 - [ ] Add 3 **Actualités**
 - [ ] Add 1 **Promotion**

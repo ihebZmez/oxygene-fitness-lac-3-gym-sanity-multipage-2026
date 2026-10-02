@@ -20,4 +20,4 @@
 - `src/components` — layout, sections, forms, UI
 - `src/hooks` — Sanity data hooks
 - `src/queries` — GROQ queries
-- `samurai-nouvelle-madina/` — Sanity Studio & schemas
+- `oxy-fit-lac/` — Sanity Studio & schemas

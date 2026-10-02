@@ -105,8 +105,8 @@ const PricingPage = () => {
       className="min-h-screen pt-8 pb-20 px-4 md:px-8 bg-gym-bg"
     >
       <Seo
-        title="Tarifs salle de sport | Samurai Nouvelle Madina"
-        description="Découvrez les abonnements et tarifs de Samurai Nouvelle Madina : accès gym, coaching, cours collectifs et offres premium."
+        title="Tarifs salle de sport à Lac 3 | OXYGÈNE FITNESS"
+        description="Découvrez les formules d'OXYGÈNE FITNESS, votre salle de sport à Lac 3, Tunis. Cours collectifs et coaching sportif."
         canonical="/tarifs"
       />
       <div className="max-w-7xl mx-auto">

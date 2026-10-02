@@ -8,18 +8,22 @@ import { Menu, X, Dumbbell, ChevronDown } from "lucide-react";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useSiteSettings } from "../../hooks/useSiteSettings";
 import { isPackage1SiteVitrine } from "../../config/packageMode";
+import gymConfig from "../../config/gymConfig";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Navbar = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
+
   const { data: settings } = useSiteSettings();
+
   const package1SiteVitrine = isPackage1SiteVitrine();
+
   const [menuOpen, setMenuOpen] = useState(false);
   const [moreOpen, setMoreOpen] = useState(false);
-  const moreRef = useRef(null);
 
+  const moreRef = useRef(null);
   const navRef = useRef(null);
   const logoRef = useRef(null);
   const linksRef = useRef([]);
@@ -28,7 +32,7 @@ const Navbar = () => {
   const mobileOverlayRef = useRef(null);
   const mobileItemsRef = useRef([]);
 
-  const gymName = settings?.gymName || "CMG club sports";
+  const gymName = settings?.gymName || gymConfig.name;
 
   const navLinks = [
     { path: "/", title: t("nav.home") },

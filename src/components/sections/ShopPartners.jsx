@@ -118,7 +118,7 @@ const ShopPartners = () => {
     >
       <div className="max-w-7xl mx-auto">
         <SectionTitle
-          badge="Recommandé par Samurai Nouvelle Madina"
+          badge="Recommandé par OXYGÈNE FITNESS – LAC 3"
           title="Shop &"
           highlight="Partenaires"
           subtitle="Sélection de produits testés et approuvés par nos coachs. Livraison via nos partenaires."

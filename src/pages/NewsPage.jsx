@@ -7,8 +7,8 @@ export default function NewsPage() {
   return (
     <div className="pt-24 pb-20 bg-gym-bg">
       <Seo
-        title="Actualités & conseils fitness | Samurai Nouvelle Madina"
-        description="Suivez les actualités, conseils fitness et bonnes pratiques de Samurai Nouvelle Madina pour rester motivé et en forme."
+        title="Actualités fitness à Lac 3 | OXYGÈNE FITNESS"
+        description="Suivez les actualités et conseils fitness d'OXYGÈNE FITNESS à Lac 3, Tunis. Bouge ton corps, oxygène ton esprit."
         canonical="/actualites"
       />
       <div className="max-w-7xl mx-auto px-4 md:px-8">

@@ -7,17 +7,17 @@
 3. Environment variables:
    - `VITE_SANITY_PROJECT_ID`
    - `VITE_SANITY_DATASET=production`
-4. Deploy → get URL like `https://samurai-nouvelle-madina.vercel.app`
+4. Deploy and record the production URL assigned to the Oxygène Fitness site
 5. Add URL to **Sanity CORS Origins** (allow credentials)
 
 ## Studio — Sanity Hosting
 
 ```bash
-cd samurai-nouvelle-madina
+cd oxy-fit-lac
 npx sanity deploy
 ```
 
-Result: https://samurai-nouvelle-madina.sanity.studio
+Use the Studio URL assigned to this Sanity project.
 
 Client Access
 sanity.io/manage → your project → Members

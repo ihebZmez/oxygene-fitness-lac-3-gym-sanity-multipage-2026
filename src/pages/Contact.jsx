@@ -95,8 +95,8 @@ const ContactPage = () => {
       className="min-h-screen pt-8 pb-20 px-4 md:px-8 bg-gym-bg"
     >
       <Seo
-        title="Contact & réservation | Samurai Nouvelle Madina"
-        description="Contactez Samurai Nouvelle Madina pour réserver votre séance d'essai, obtenir un devis ou prendre rendez-vous avec nos coachs."
+        title="Contact | OXYGÈNE FITNESS – LAC 3"
+        description="Contactez OXYGÈNE FITNESS – LAC 3 au 20 053 053. Retrouvez votre salle de sport à Lac 3, Tunis, avec parking gratuit."
         canonical="/contact"
       />
       <div className="max-w-7xl mx-auto">
@@ -168,7 +168,7 @@ const ContactPage = () => {
         {/* Map */}
         <div className="mt-12 rounded-2xl overflow-hidden border border-gym-border h-110">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d799.2983992344604!2d10.2065891!3d36.7419239!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd3762f20eba97%3A0xa0bbc8e6a7f3e3c4!2sCMG%20club%20sports!5e0!3m2!1sfr!2stn!4v1789331476788!5m2!1sfr!2stn"
+            src="https://www.google.com/maps?q=OXYG%C3%88NE%20FITNESS%20%E2%80%93%20LAC%203%2C%20Tunis%2C%20Tunisie&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}

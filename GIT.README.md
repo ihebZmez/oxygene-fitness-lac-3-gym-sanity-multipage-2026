@@ -1,11 +1,13 @@
 # Git Workflow: Complete Terminal-Only Branch Management
 
 ## Overview
+
 This document outlines a complete Git workflow for creating, working on, and merging feature branches entirely from the terminal without using GitHub/GitLab UI merge features.
 
 ## Workflow Steps
 
 ### 1. Start Working from Main
+
 ```bash
 git checkout main
 git pull origin main
@@ -13,6 +15,7 @@ git checkout -b R-20102025-customization
 ```
 
 ### 2. Work on Your Feature
+
 ```bash
 git add .
 git commit -m "customization 1 application"
@@ -35,9 +38,11 @@ git merge R-20102025-customization
 ```
 
 **If there are conflicts:**
+
 - Edit files
 - Resolve conflicts
 - Then:
+
 ```bash
 git add .
 git commit
@@ -58,6 +63,7 @@ git branch -d R-20102025-customization
 ```
 
 **If Git refuses (unmerged branch):**
+
 ```bash
 git branch -D R-20102025-customization
 ```
@@ -69,11 +75,13 @@ git push origin --delete R-20102025-customization
 ```
 
 ### 5. Clean Stale Remote Refs
+
 ```bash
 git fetch -p
 ```
 
 ### 6. Check Branches
+
 ```bash
 git branch
 git branch -r
@@ -90,6 +98,7 @@ git status
 ```
 
 You should see something like:
+
 ```
 On branch main
 Your branch is up to date with 'origin/main'

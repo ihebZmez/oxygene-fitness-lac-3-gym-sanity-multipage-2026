@@ -2,23 +2,23 @@
 // All configurable values are defined here for easy maintenance
 
 export const gymConfig = {
-  name: "Samurai",
-  tagline: "L'excellence du sport tunisien",
-  siteUrl: "https://Samurai.vercel.app",
+  name: "OXYGÈNE FITNESS – LAC 3",
+  tagline: "Bouge ton corps, oxygène ton esprit.",
+  siteUrl: "",
 
   // Contact
-  phone: "+216 XX XX XX XX",
-  whatsapp: "+216 XX XX XX XX",
-  email: "contact@samurai.tn",
-  address: "Tunis, Tunisie",
+  phone: "20 053 053",
+  whatsapp: "21620053053",
+  email: "",
+  address: "Lac 3, Tunis, Tunisie · Parking gratuit",
 
   // Social Media
   social: {
-    facebook: "https://facebook.com/Samurai",
-    instagram: "https://instagram.com/Samurai",
-    youtube: "https://youtube.com/Samurai",
-    tiktok: "https://tiktok.com/@Samurai",
-    linkedin: "https://linkedin.com/company/Samurai",
+    facebook: "",
+    instagram: "",
+    youtube: "",
+    tiktok: "",
+    linkedin: "",
   },
 
   // Brand — RED & WHITE
@@ -39,8 +39,10 @@ export const gymConfig = {
 
   // WhatsApp default messages
   whatsappMessages: {
-    default: "Bonjour, je souhaite avoir plus d'informations sur Samurai.",
-    trial: "Bonjour, je souhaite réserver une séance d'essai à Samurai.",
+    default:
+      "Bonjour, je souhaite avoir plus d'informations sur Oxygène Fitness Lac 3.",
+    trial:
+      "Bonjour, je souhaite réserver une séance d'essai chez Oxygène Fitness Lac 3.",
     pricing:
       "Bonjour, je souhaite avoir plus d'informations sur les abonnements.",
   },

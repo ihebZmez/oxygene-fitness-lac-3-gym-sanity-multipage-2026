@@ -13,9 +13,9 @@
   },
   "hero": {
     "badge": "Saison 2025 · Tunis, Tunisie",
-    "title": "{{gymName}}",
-    "titleHighlight": "Votre énergie.",
-    "subtitle": "Un club premium à Tunis pour se renforcer, bouger ensemble et atteindre ses objectifs.",
+    "title": "Bouge ton corps,",
+    "titleHighlight": "oxygène ton esprit.",
+    "subtitle": "OXYGÈNE FITNESS – LAC 3, votre salle de sport à Lac 3, Tunis. Parking gratuit.",
     "ctaPrimary": "Découvrir nos espaces",
     "ctaSecondary": "Faire un essai"
   },
@@ -114,7 +114,7 @@
   },
   "footer": {
     "copyright": "© 2026 {{gymName}}. Tous droits réservés.",
-    "tagline": "L'excellence du sport tunisien"
+    "tagline": "Bouge ton corps, oxygène ton esprit."
   },
   "reservation": {
     "title": "Réserver une séance",

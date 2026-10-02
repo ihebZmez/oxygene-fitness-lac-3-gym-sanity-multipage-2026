@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://samurai-nouvelle-madina.vercel.app/sitemap.xml
+Sitemap: https://oxygenefitnesslac3.vercel.app/sitemap.xml

@@ -216,7 +216,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-0 overflow-hidden">
         <img
           src={POSTER_IMAGE}
-          alt="Samurai Nouvelle Madina - Salle de sport et fitness"
+          alt="OXYGÈNE FITNESS – LAC 3, salle de sport à Tunis"
           className="absolute inset-0 w-full h-full object-cover"
           fetchPriority="high"
         />

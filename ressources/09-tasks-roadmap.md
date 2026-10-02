@@ -18,12 +18,12 @@
 
 - [x] Configure EmailJS
 - [x] Seed production content in Sanity
-- [ ] Google Business Profile setup (Mourouj)
+- [ ] Google Business Profile setup (Lac 3, Tunis)
 - [x] Deploy frontend on Vercel
 - [ ] Deploy Studio on sanity.studio
 - [ ] Invite client as Editor
 - [ ] Mobile QA pass
-- [ ] Create a sending account "samurainouvellemadina.contact@gmail.com"
+- [ ] Configure a client-approved sending address
 - [ ] Analytics (Google Analytics 4 / Plausible)
 
 ## After Launch (optional)

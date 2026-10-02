@@ -1,4 +1,9 @@
-// constants/index.js
+// ============================================================
+// Navigation
+// Static structure only.
+// Client-specific visibility can still be controlled elsewhere.
+// ============================================================
+
 const navLinks = [
   { id: "espaces", title: "Nos espaces" },
   { id: "activites", title: "Activités" },
@@ -7,194 +12,216 @@ const navLinks = [
   { id: "contact", title: "Contact" },
 ];
 
-// Gym Equipment & Activities
+// ============================================================
+// Gym Equipment
+// Generic fallback content.
+// Prefer Sanity data when available.
+// ============================================================
+
 const gymEquipment = [
   {
     name: "Cardio",
-    country: "Technogym",
-    detail: "Un espace dédié incontournable pour une bonne préparation.",
+    country: "Équipement cardio",
+    detail:
+      "Un espace dédié à l'entraînement cardiovasculaire et à l'amélioration de votre endurance.",
     price: "Inclus",
     skill: "Tous niveaux",
   },
   {
-    name: "Force",
-    country: "Technogym",
-    detail: "Parmi les salles les mieux équipées au monde.",
+    name: "Musculation",
+    country: "Espace musculation",
+    detail:
+      "Un espace adapté au développement de la force, de la tonicité et de la condition physique.",
+    price: "Inclus",
+    skill: "Tous niveaux",
+  },
+  {
+    name: "Fonctionnel",
+    country: "Entraînement fonctionnel",
+    detail:
+      "Des exercices variés pour améliorer mobilité, force, équilibre et performance.",
     price: "Inclus",
     skill: "Tous niveaux",
   },
   {
     name: "Étirements",
-    country: "Guidé",
-    detail: "Optimisez le capital performance acquis lors de votre séance.",
-    price: "Inclus",
-    skill: "Tous niveaux",
-  },
-  {
-    name: "TRX",
-    country: "Collectif",
-    detail: "Un esprit collectif pour partager un bon moment.",
+    country: "Récupération",
+    detail:
+      "Un espace pour favoriser la mobilité, la récupération et le bien-être après l'entraînement.",
     price: "Inclus",
     skill: "Tous niveaux",
   },
 ];
 
+// ============================================================
 // Junior Activities & Special Programs
+// Generic fallback content.
+// ============================================================
+
 const juniorActivities = [
   {
     name: "Cours Collectifs",
-    country: "Reebok Les Mills",
-    detail: "Zumba, Salsa, Danse orientale et contemporaine.",
-    price: "Sur mesure",
-    skill: "Tous âges",
-  },
-  {
-    name: "Gymnastique Loisirs-Santé",
     country: "Encadré",
     detail:
-      "Programme spécifique pour la tonicité musculaire et l'amincissement.",
+      "Des séances collectives variées pour bouger, progresser et partager une expérience sportive.",
     price: "Sur mesure",
-    skill: "Débutant",
+    skill: "Tous niveaux",
   },
   {
-    name: "Programme Enfants & Ados",
+    name: "Kids & Junior",
     country: "Encadré",
-    detail: "Cours adaptés pour les plus jeunes.",
+    detail:
+      "Des activités adaptées aux enfants et aux adolescents dans un environnement sportif.",
     price: "Sur mesure",
-    skill: "Enfants/Ados",
+    skill: "Enfants / Ados",
   },
   {
     name: "Coaching Personnalisé",
-    country: "Premium",
-    detail:
-      "Un coach élabore avec vous un programme sur mesure selon vos objectifs.",
+    country: "Accompagnement",
+    detail: "Un accompagnement adapté à vos objectifs et à votre niveau.",
     price: "Sur mesure",
-    skill: "Avancé",
+    skill: "Tous niveaux",
   },
 ];
 
+// ============================================================
 // Coach Profiles
-const coachProfiles = [
-  {
-    imgPath: "/images/coach1.png",
-    name: "Nour Ben Amor",
-    role: "Coach Cardio & Force",
-  },
-  {
-    imgPath: "/images/coach2.png",
-    name: "Yassine Trabelsi",
-    role: "Coach TRX & Étirements",
-  },
-  {
-    imgPath: "/images/coach3.png",
-    name: "Meriem Gharbi",
-    role: "Coach Cours Collectifs",
-  },
-  {
-    imgPath: "/images/coach4.png",
-    name: "Ahmed Mansour",
-    role: "Préparateur Physique",
-  },
-];
+// Empty by default.
+// Populate from Sanity or replace only with verified client data.
+// ============================================================
 
+const coachProfiles = [];
+
+// ============================================================
 // Gym Features
+// Generic fallback content.
+// Avoid unsupported claims about equipment, size or certifications.
+// ============================================================
+
 const gymFeatures = [
-  "Équipements Technogym dernière génération",
-  "Espace Indoor et Out-door de 2500m²",
-  "Coachs impliqués et à l'écoute",
-  "Cours professionnels agrées Reebok Les Mills",
+  "Large choix d'activités sportives",
+  "Cours collectifs variés",
+  "Accompagnement sportif",
+  "Espace adapté à différents objectifs",
 ];
 
+// ============================================================
 // Gym Benefits
+// Generic marketing benefits.
+// ============================================================
+
 const gymBenefits = [
-  "Un suivi personnalisé pour vos objectifs",
-  "Des coachs certifiés et disponibles",
+  "Un accompagnement adapté à vos objectifs",
+  "Une variété d'activités sportives",
   "Une énergie collective motivante",
-  "Des résultats mesurables semaine après semaine",
+  "Un environnement pensé pour votre progression",
 ];
 
-// Club Info
+// ============================================================
+// Club Information
+// Static fallback.
+// If siteSettings in Sanity provides these values, prefer Sanity.
+// ============================================================
+
 const clubInfo = {
-  heading: "Visitez Samurai Nouvelle Madina et découvrez nos espaces",
-  address: "Samurai Nouvelle Madina, Tunis, Tunisie",
+  heading: "Visitez Oxygene Fitness Lac 3 et découvrez nos espaces",
+  address: "Zone industrielle Khaireddine Lac III, 2089, Tunis, Tunisie",
   contact: {
-    phone: "(+216) 53 85 31 55",
-    email: "contact@samurainodevillamadina.tn",
+    phone: "+216 71 727 189",
+    email: "",
   },
 };
 
-// Club Hours (Updated to match Samurai Nouvelle Madina)
+// ============================================================
+// Club Hours
+// Static fallback based on the current business information.
+// Prefer Sanity siteSettings when available.
+// ============================================================
+
 const clubHours = [
-  { day: "Lun–Ven", time: "07:00 – 22:00" },
+  { day: "Lundi", time: "06:30 – 22:00" },
+  { day: "Mardi", time: "06:30 – 22:00" },
+  { day: "Mercredi", time: "06:30 – 22:00" },
+  { day: "Jeudi", time: "06:30 – 22:00" },
+  { day: "Vendredi", time: "06:30 – 22:00" },
   { day: "Samedi", time: "07:00 – 18:00" },
-  { day: "Dimanche", time: "08:00 – 14:00" },
+  { day: "Dimanche", time: "07:00 – 15:00" },
 ];
 
+// ============================================================
 // Social Media
+// Static fallback.
+// Prefer Sanity siteSettings when available.
+// ============================================================
+
 const socials = [
   {
     name: "Instagram",
-    icon: "/images/insta.png",
-    url: "https://instagram.com/samurainodevillamadina",
-  },
-  {
-    name: "Facebook",
-    icon: "/images/fb.png",
-    url: "https://facebook.com/samurainodevillamadina",
+    url: "https://www.instagram.com/oxy.fit.lac3",
+    icon: "instagram",
   },
 ];
 
-// Featured Equipment (Gym Activities)
+// ============================================================
+// Featured Equipment / Spaces
+// Generic fallback content.
+// Replace with Sanity content when available.
+// ============================================================
+
 const featuredEquipment = [
   {
     id: 1,
     name: "Cardio",
     image: "/images/equipment1.png",
-    title: "Préparez-vous",
+    title: "Bougez et améliorez votre endurance",
     description:
-      "Un espace dédié incontournable pour une bonne préparation cardiovasculaire.",
+      "Un espace dédié à l'entraînement cardiovasculaire et à l'amélioration de votre condition physique.",
     skill: "Tous niveaux",
     carbon: "Endurance",
-    shape: "Performance",
-    weight: "Technogym",
+    shape: "Cardio",
+    weight: "Entraînement",
   },
   {
     id: 2,
-    name: "Force",
+    name: "Musculation",
     image: "/images/equipment2.png",
-    title: "Repoussez vos limites",
+    title: "Développez votre force",
     description:
-      "Samurai Nouvelle Madina compte parmi les salles les mieux équipées au monde pour la force.",
+      "Un espace consacré au renforcement musculaire et à la progression selon vos objectifs.",
     skill: "Tous niveaux",
-    carbon: "Puissance",
-    shape: "Intensité",
-    weight: "Technogym",
+    carbon: "Force",
+    shape: "Musculation",
+    weight: "Performance",
   },
   {
     id: 3,
-    name: "TRX",
+    name: "Fonctionnel",
     image: "/images/equipment3.png",
-    title: "Défiez votre équilibre",
+    title: "Améliorez votre mobilité",
     description:
-      "Un esprit collectif pour partager un bon moment et renforcer votre corps.",
-    skill: "Intermédiaire",
-    carbon: "Stabilité",
+      "Des exercices fonctionnels pour travailler la mobilité, la stabilité, la coordination et la condition physique.",
+    skill: "Tous niveaux",
+    carbon: "Mobilité",
     shape: "Fonctionnel",
-    weight: "Collectif",
+    weight: "Performance",
   },
   {
     id: 4,
-    name: "Étirements",
+    name: "Récupération",
     image: "/images/equipment4.png",
     title: "Récupérez et progressez",
     description:
-      "Optimisez le 'capital performance' acquis lors de votre séance.",
+      "Prenez soin de votre mobilité et favorisez votre récupération après vos séances.",
     skill: "Tous niveaux",
     carbon: "Souplesse",
     shape: "Récupération",
-    weight: "Guidé",
+    weight: "Bien-être",
   },
 ];
+
+// ============================================================
+// Export
+// ============================================================
 
 export {
   navLinks,

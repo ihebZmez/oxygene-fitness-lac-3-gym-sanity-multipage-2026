@@ -41,8 +41,8 @@ const SchedulePage = () => {
   return (
     <div className="min-h-screen pt-8 pb-20 px-4 md:px-8 bg-gym-bg">
       <Seo
-        title="Planning des cours | Samurai Nouvelle Madina"
-        description="Consultez le planning hebdomadaire de Samurai Nouvelle Madina : yoga, cardio, boxe, musculation et cours collectifs."
+        title="Planning des cours collectifs à Lac 3 | OXYGÈNE FITNESS"
+        description="Consultez le planning des cours collectifs d'OXYGÈNE FITNESS à Lac 3, Tunis : Cross Training, Boxe, Pilates, Cycling et danse."
         canonical="/planning"
       />
       <div className="max-w-7xl mx-auto">

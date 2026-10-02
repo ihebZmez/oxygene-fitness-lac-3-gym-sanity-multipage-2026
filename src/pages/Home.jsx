@@ -18,8 +18,8 @@ const Home = () => {
   return (
     <>
       <Seo
-        title="CMG Club Sports | Salle de sport, musculation & fitness à Mourouj et Ben Arous"
-        description="CMG Club Sports, aussi connu sous le nom de Club Med Gym, est une salle de sport à Mourouj et Ben Arous en Tunisie. Découvrez nos activités, coaching personnel, tarifs et planning pour atteindre vos objectifs fitness."
+        title="OXYGÈNE FITNESS – LAC 3 | Salle de sport à Tunis"
+        description="Bouge ton corps, oxygène ton esprit. Découvrez OXYGÈNE FITNESS – LAC 3 : cours collectifs, fitness et coaching sportif à Lac 3, Tunis. Parking gratuit."
         canonical="/"
       />
       <Hero /> {/* 1. Hook */}

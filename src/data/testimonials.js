@@ -24,7 +24,7 @@ export const testimonialsItems = [
     name: "Sophie Martin",
     role: "Coach Internationale",
     content:
-      "J'ai accompagné des sportifs dans le monde entier, mais Samurai Nouvelle Madina reste une référence. La passion et l'excellence sont au rendez-vous.",
+      "J'ai accompagné des sportifs dans le monde entier, et la passion pour le mouvement reste au cœur de chaque séance.",
     rating: 5,
     image: "/images/testimonial3.jpg",
     location: "Paris/Tunis",

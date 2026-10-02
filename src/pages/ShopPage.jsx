@@ -7,8 +7,8 @@ export default function ShopPage() {
   return (
     <div className="pt-24 pb-20 bg-gym-bg">
       <Seo
-        title="Boutique sport & accessoires | Samurai Nouvelle Madina"
-        description="Découvrez les produits et accessoires sport Samurai Nouvelle Madina pour compléter votre entraînement et votre routine fitness."
+        title="Boutique sport & accessoires | OXYGÈNE FITNESS – LAC 3"
+        description="Découvrez la boutique sport d'OXYGÈNE FITNESS – LAC 3, votre club de sport à Tunis."
         canonical="/shop"
       />
       <div className="max-w-7xl mx-auto px-4 md:px-8">

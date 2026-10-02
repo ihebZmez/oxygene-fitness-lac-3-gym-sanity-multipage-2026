@@ -1,22 +1,26 @@
 import { Helmet } from "react-helmet-async";
 import { gymConfig } from "../../config/gymConfig";
 
-const defaultTitle =
-  "Samurai Nouvelle Madina | Salle de sport & fitness à Mourouj, Tunis";
+const defaultTitle = "OXYGÈNE FITNESS – LAC 3 | Salle de sport à Tunis";
 const defaultDescription =
-  "Samurai Nouvelle Madina est votre salle de sport premium à Mourouj, Tunis : musculation, cardio, coaching personnel, cours collectifs, coaching sportif et séance d'essai gratuite.";
+  "OXYGÈNE FITNESS – LAC 3, votre salle de sport à Lac 3, Tunis : cours collectifs, fitness et coaching sportif. Parking gratuit.";
 const defaultKeywords =
-  "salle de sport Mourouj, gym Tunis, fitness Tunis, musculation Mourouj, coaching personnel Tunis, cours collectifs Tunis, Samurai Nouvelle Madina";
+  "Oxygène Fitness Lac 3, salle de sport Lac 3, salle de sport Les Berges du Lac, salle de sport Tunis Lac 3, fitness Lac 3, salle de fitness Tunis, salle de musculation Lac 3, club de sport Lac 3, cours collectifs Lac 3, coaching sportif Lac 3";
 
 const Seo = ({
   title = defaultTitle,
   description = defaultDescription,
   canonical = "/",
-  image = `${gymConfig.siteUrl}/og-image.svg`,
+  image = "/images/gym-hero-poster.jpg",
   keywords = defaultKeywords,
   noIndex = false,
 }) => {
-  const canonicalUrl = `${gymConfig.siteUrl}${canonical.startsWith("/") ? canonical : `/${canonical}`}`;
+  const siteUrl = gymConfig.siteUrl || window.location.origin;
+  const canonicalUrl = new URL(
+    canonical.startsWith("/") ? canonical : `/${canonical}`,
+    siteUrl,
+  ).toString();
+  const imageUrl = new URL(image, siteUrl).toString();
 
   return (
     <Helmet prioritizeSeoTags>
@@ -30,31 +34,24 @@ const Seo = ({
         }
       />
       <meta name="theme-color" content={gymConfig.accentColor} />
-      <meta
-        name="apple-mobile-web-app-title"
-        content="Samurai Nouvelle Madina"
-      />
+      <meta name="apple-mobile-web-app-title" content={gymConfig.name} />
       <link rel="canonical" href={canonicalUrl} />
-      <link rel="alternate" href={`${gymConfig.siteUrl}/`} hreflang="fr" />
-      <link
-        rel="alternate"
-        href={`${gymConfig.siteUrl}/`}
-        hreflang="x-default"
-      />
-      <link rel="alternate" href={`${gymConfig.siteUrl}/en/`} hreflang="en" />
+      <link rel="alternate" href={`${siteUrl}/`} hreflang="fr" />
+      <link rel="alternate" href={`${siteUrl}/`} hreflang="x-default" />
+      <link rel="alternate" href={`${siteUrl}/en/`} hreflang="en" />
 
       <meta property="og:type" content="website" />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={image} />
-      <meta property="og:site_name" content="Samurai Nouvelle Madina" />
+      <meta property="og:image" content={imageUrl} />
+      <meta property="og:site_name" content={gymConfig.name} />
       <meta property="og:locale" content="fr_TN" />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={image} />
+      <meta name="twitter:image" content={imageUrl} />
     </Helmet>
   );
 };
