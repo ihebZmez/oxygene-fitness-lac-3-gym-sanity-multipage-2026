@@ -98,7 +98,7 @@ export default defineType({
       name: 'contactEmail',
       title: 'Email dédié entreprises',
       type: 'string',
-      description: 'Ex: corporate@samurainouvellemadina.tn',
+      description: 'Ex: corporate@oxygene-fitness-lac3.tn',
     }),
     defineField({
       name: 'contactPhone',
